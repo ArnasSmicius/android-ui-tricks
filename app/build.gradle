@@ -6,13 +6,11 @@ android {
 
 
     defaultConfig {
-        applicationId "com.arnassmicius.androiduitricks.app"
+        applicationId "com.arnassmicius.androiduitricks"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-
-
     }
 
     buildTypes {
@@ -25,6 +23,5 @@ android {
 }
 
 dependencies {
-    implementation project(':instant')
     implementation project(':base')
 }

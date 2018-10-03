@@ -1,4 +1,4 @@
-package com.arnassmicius.androiduitricks.instant.fragments
+package com.arnassmicius.androiduitricks.fragments
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.arnassmicius.androiduitricks.instant.viewmodels.MainViewModel
-import com.arnassmicius.androiduitricks.instant.R
+import com.arnassmicius.androiduitricks.viewmodels.MainViewModel
+import com.arnassmicius.androiduitricks.R
 
 
 class MainFragment : Fragment() {

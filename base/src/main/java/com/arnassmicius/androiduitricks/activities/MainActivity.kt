@@ -1,9 +1,9 @@
-package com.arnassmicius.androiduitricks.instant.activities
+package com.arnassmicius.androiduitricks.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.arnassmicius.androiduitricks.instant.R
-import com.arnassmicius.androiduitricks.instant.fragments.MainFragment
+import com.arnassmicius.androiduitricks.R
+import com.arnassmicius.androiduitricks.fragments.MainFragment
 
 class MainActivity : AppCompatActivity() {
 

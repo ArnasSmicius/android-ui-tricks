@@ -1,4 +1,4 @@
-package com.arnassmicius.androiduitricks.instant.viewmodels
+package com.arnassmicius.androiduitricks.viewmodels
 
 import androidx.lifecycle.ViewModel;
 
