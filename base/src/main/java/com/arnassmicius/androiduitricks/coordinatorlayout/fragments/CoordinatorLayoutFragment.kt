@@ -1,4 +1,4 @@
-package com.arnassmicius.androiduitricks.fragments
+package com.arnassmicius.androiduitricks.coordinatorlayout.fragments
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -7,32 +7,31 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentTransaction
-import com.arnassmicius.androiduitricks.viewmodels.MainViewModel
+import com.arnassmicius.androiduitricks.coordinatorlayout.viewmodels.CoordinatorLayoutViewModel
 import com.arnassmicius.androiduitricks.R
-import com.arnassmicius.androiduitricks.coordinatorlayout.fragments.CoordinatorLayoutFragment
-import kotlinx.android.synthetic.main.main_fragment.*
+import kotlinx.android.synthetic.main.coordinator_layout_fragment.*
 
 
-class MainFragment : Fragment() {
+class CoordinatorLayoutFragment : Fragment() {
 
     companion object {
-        fun newInstance() = MainFragment()
+        fun newInstance() = CoordinatorLayoutFragment()
     }
 
-    private lateinit var viewModel: MainViewModel
+    private lateinit var viewModel: CoordinatorLayoutViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.main_fragment, container, false)
+        return inflater.inflate(R.layout.coordinator_layout_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(CoordinatorLayoutViewModel::class.java)
 
-        coordinatorLayoutButton.setOnClickListener {
+        collapsingToolbarButton.setOnClickListener {
             fragmentManager?.beginTransaction()
-                    ?.replace(R.id.mainContainer, CoordinatorLayoutFragment.newInstance())
+                    ?.replace(R.id.mainContainer, CollapsingToolbarFragment.newInstance())
                     ?.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                     ?.addToBackStack(null)
                     ?.commit()

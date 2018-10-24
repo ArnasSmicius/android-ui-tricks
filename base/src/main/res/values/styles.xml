@@ -5,35 +5,50 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
 
         <item name="android:windowBackground">@color/colorPrimaryLight</item>
-
-        <!-- Activity transitions -->
-        <item name="android:windowActivityTransitions">true</item>
-        <item name="android:windowEnterTransition">@android:transition/slide_right</item>
-        <item name="android:windowExitTransition">@android:transition/slide_left</item>
-        <!---->
+        <item name="android:textColorSecondary">@color/colorTextIcons</item>
     </style>
 
+    <!-- TEXT STYLES-->
+    <style name="HeadlineSecondaryTextStyle" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textColor">@color/colorSecondaryText</item>
+    </style>
     <style name="TitleTextStyle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+    <style name="TitlePrimaryTextStyle" parent="TitleTextStyle">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+    <style name="TitleAccentTextStyle" parent="TitleTextStyle">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+    <style name="CaptionTextStyle" parent="TextAppearance.AppCompat.Caption"/>
+    <style name="CaptionSecondaryTextStyle" parent="CaptionTextStyle">
+        <item name="android:textColor">@color/colorSecondaryText</item>
+    </style>
+    <style name="ToolbarTextStyle">
         <item name="android:textColor">@color/colorTextIcons</item>
-        <item name="android:textSize">32sp</item>
     </style>
+    <!---->
 
-    <style name="CardViewStyle" parent="Widget.MaterialComponents.CardView">
-        <item name="android:layout_margin">8dp</item>
-        <item name="cardElevation">8dp</item>
-        <item name="cardCornerRadius">8dp</item>
-    </style>
-
-    <style name="LayoutStyle">
-        <!--<item name="android:padding">@dimen/MainWindowPadding</item>-->
-        <item name="android:clipToPadding">false</item>
+    <style name="MainMenuItemStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">@dimen/elevation_standard</item>
+        <item name="cardCornerRadius">@dimen/main_corner_radius</item>
+        <item name="cardUseCompatPadding">true</item>
     </style>
 
     <style name="Button" parent="Widget.MaterialComponents.Button">
-        <item name="cornerRadius">8dp</item>
+        <item name="cornerRadius">@dimen/main_corner_radius</item>
+    </style>
+
+    <style name="FabStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+    </style>
+
+    <style name="IconStyle">
+        <item name="android:tint">@color/colorSecondaryText</item>
     </style>
 
 </resources>

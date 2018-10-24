@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true">
+        <set>
+            <objectAnimator
+                android:duration="@integer/animation_duration"
+                android:propertyName="elevation"
+                android:valueTo="@dimen/elevation_standard_pressed"
+                android:valueType="floatType" />
+
+            <objectAnimator
+                android:duration="@integer/animation_duration"
+                android:propertyName="scaleX"
+                android:valueTo="@dimen/item_scale_size_pressed"
+                android:valueType="floatType"/>
+
+            <objectAnimator
+                android:duration="@integer/animation_duration"
+                android:propertyName="scaleY"
+                android:valueTo="@dimen/item_scale_size_pressed"
+                android:valueType="floatType" />
+        </set>
+    </item>
+
+    <item android:state_enabled="true" android:state_pressed="false">
+        <set>
+            <objectAnimator
+                android:duration="@integer/animation_duration"
+                android:propertyName="elevation"
+                android:valueTo="@dimen/elevation_standard"
+                android:valueType="floatType" />
+
+            <objectAnimator
+                android:duration="@integer/animation_duration"
+                android:propertyName="scaleX"
+                android:valueTo="@dimen/item_scale_size"
+                android:valueType="floatType"/>
+
+            <objectAnimator
+                android:duration="@integer/animation_duration"
+                android:propertyName="scaleY"
+                android:valueTo="@dimen/item_scale_size"
+                android:valueType="floatType" />
+        </set>
+    </item>
+</selector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="animation_duration">300</integer>
+    <item name="item_scale_size" format="float" type="dimen">1.0</item>
+    <item name="item_scale_size_pressed" format="float" type="dimen">0.98</item>
+</resources>

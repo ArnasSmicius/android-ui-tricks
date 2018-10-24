@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.MainFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".coordinatorlayout.fragments.CoordinatorLayoutFragment">
 
     <com.arnassmicius.androiduitricks.coordinatorlayout.views.CollapsingToolbarWithFabView
-        android:id="@+id/coordinatorLayoutButton"
+        android:id="@+id/collapsingToolbarButton"
         style="@style/MainMenuItemStyle"
         android:layout_width="0dp"
         android:layout_height="@dimen/main_menu_card_height"
-        app:title="@string/main_fragment_coordinator_layout_title"
+        app:title="@string/coordinator_layout_fragment_collapsing_toolbar_title"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

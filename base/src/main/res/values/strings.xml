@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Android UI Tricks</string>
+    <string name="main_fragment_coordinator_layout_title">Coodinator Layout</string>
+    <string name="coordinator_layout_fragment_collapsing_toolbar_title">Collapsing Toolbar</string>
+    <string name="collapsing_toolbar_setting_snap_action_title">Snap</string>
+    <string name="collapsing_toolbar_setting_snap_action_description">Fit in place with an abrupt movement</string>
+    <string name="collapsing_toolbar_setting_fab_action_title">FAB</string>
+    <string name="collapsing_toolbar_setting_fab_action_description">Show floating action button</string>
+    <string name="collapsing_toolbar_setting_title">Settings</string>
+    <string name="collapsing_toolbar_menu_github_link_title">Github link</string>
 </resources>

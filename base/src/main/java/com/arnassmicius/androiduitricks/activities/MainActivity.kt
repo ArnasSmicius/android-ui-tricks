@@ -1,11 +1,11 @@
 package com.arnassmicius.androiduitricks.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.arnassmicius.androiduitricks.R
 import com.arnassmicius.androiduitricks.fragments.MainFragment
 
-class MainActivity : AppCompatActivity() {
+
+class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,4 +17,5 @@ class MainActivity : AppCompatActivity() {
                     .commit()
         }
     }
+
 }
